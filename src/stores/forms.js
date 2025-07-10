@@ -10,3 +10,14 @@ export const useEngordeStore = defineStore('engorde', () => {
 
   return { count, doubleCount, increment }
 })
+
+export const useContactStore = defineStore('contact', {
+  state: () => ({
+    Contacto: [],
+  }),
+  actions: {
+    addContacto(contacto) {
+      this.Contacto.push(contacto)
+    },
+  },
+})
