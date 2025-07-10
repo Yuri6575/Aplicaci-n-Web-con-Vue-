@@ -6,13 +6,13 @@
     >
       ✅Registro exitoso
     </div>
-    <ContacForm
+    <ContactForm
       v-model="nombre"
       inputLabel="nombre"
       inputName="nombre"
       placeholder="Ingrese el nombre"
     />
-    <ContacForm
+    <ContactForm
       v-model="numero"
       inputLabel="numero"
       inputName="numero"
@@ -25,7 +25,7 @@
 <script setup>
 import { ref } from 'vue'
 import BaseButton from './BaseButton.vue'
-import ContacForm from './ContacForm.vue'
+import ContactForm from './ContactForm.vue'
 import { useContactStore } from '@/stores/forms'
 
 const contactStore = useContactStore()
